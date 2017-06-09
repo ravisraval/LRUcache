@@ -9,9 +9,7 @@ class HashSet
   end
 
   def insert(key)
-    p key
     num = key.hash
-    p num
     self[num].push(key) unless include?(key)
     @count += 1
     resize! if @count == num_buckets
@@ -19,12 +17,7 @@ class HashSet
 
   def include?(key)
     num = key.hash
-    puts "num"
-    p num
-    puts "key"
-    p key
-    puts "store"
-    p @store
+    @store
     self[num].include?(key)
   end
 

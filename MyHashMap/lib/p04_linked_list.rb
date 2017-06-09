@@ -89,6 +89,7 @@ class LinkedList
     @links.each do |link|
       proc.call(link)
     end
+    @links
   end
 
   def to_s
