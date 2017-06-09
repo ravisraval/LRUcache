@@ -81,7 +81,7 @@ class ResizingIntSet
   end
 
   def include?(num)
-      @store[num % num_buckets].include?(num)
+    @store[num % num_buckets].include?(num)
   end
 
 
